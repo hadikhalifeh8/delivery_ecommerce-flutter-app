@@ -15,7 +15,7 @@ class MyMidlleware extends GetMiddleware{
   RouteSettings? redirect(String? route) {
     //step 2 الأولويه لل 
      if(myservices.sharedPreferences.getString("step") == "2"){
-        return const RouteSettings(name: AppRoute.test);
+        return const RouteSettings(name: AppRoute.homeScreeen);
     }
   
     if(myservices.sharedPreferences.getString("step") == "1"){

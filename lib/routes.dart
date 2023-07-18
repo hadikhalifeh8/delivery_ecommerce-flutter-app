@@ -1,5 +1,7 @@
 import 'package:delivery_ecommerce/core/constant/routes.dart';
 import 'package:delivery_ecommerce/core/middleware/myMiddleware.dart';
+import 'package:delivery_ecommerce/view/screen/Home/home.dart';
+import 'package:delivery_ecommerce/view/screen/Home/homeScreen.dart';
 import 'package:delivery_ecommerce/view/screen/Test/test.dart';
 
 import 'package:delivery_ecommerce/view/screen/auth/forgetpassword/checkEmail.dart';
@@ -7,6 +9,9 @@ import 'package:delivery_ecommerce/view/screen/auth/forgetpassword/resetPassword
 import 'package:delivery_ecommerce/view/screen/auth/forgetpassword/successResetPassword.dart';
 import 'package:delivery_ecommerce/view/screen/auth/forgetpassword/verifycode.dart';
 import 'package:delivery_ecommerce/view/screen/auth/login.dart';
+import 'package:delivery_ecommerce/view/screen/orders/archeiveOrders.dart';
+import 'package:delivery_ecommerce/view/screen/orders/details.dart';
+import 'package:delivery_ecommerce/view/screen/orders/pendingOrders.dart';
 
 
 
@@ -25,6 +30,8 @@ List<GetPage<dynamic>>? routes = [
 // Test
    GetPage(name:  AppRoute.test, page: () => const Test(),),
 
+
+
 // onBoarding page
    //GetPage(name:  AppRoute.onBoarding, page: () => const OnBoarding(),),
 
@@ -40,27 +47,20 @@ List<GetPage<dynamic>>? routes = [
    GetPage(name:  AppRoute.successRestPassword, page: () => const SuccessRestPassword(),),
 
 
+   // HomeScreen
+   GetPage(name:  AppRoute.homeScreeen, page: () => const HomeScreen(),),
+
+
+
+
+
+  // Archieve / Pending / Details Orders Page
+ 
+ GetPage(name: AppRoute.detailsOrder, page: () => const OrderDetails()), 
+ GetPage(name: AppRoute.archieveOrders, page: () => const OrdersArchive()), 
+
+
 ];
 
 
 
-// Map<String, Widget Function(BuildContext)> routes = {
- 
-//   // test page
-//   AppRoute.test : (context) => const Test(),
-
-//   // onBoarding page
-// AppRoute.onBoarding :(context) => const OnBoarding(),
-
-// // Auth
-// AppRoute.login :(context) => const Login(),
-
-// AppRoute.signup :(context) => const Signup(),
-// AppRoute.verifyCodeSignup :(context) => const VerifyCodeSignUp(),
-
-// AppRoute.forgetpassword :(context) => const ForgetPassword(),
-// AppRoute.verifycode :(context) => const VerifyCode(),
-// AppRoute.resetPassword :(context) => const ResetPassword(),
-// AppRoute.successRestPassword :(context) => const SuccessRestPassword(),
-
-// };

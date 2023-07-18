@@ -5,6 +5,6 @@ class Test extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(child: Text("data"),);
+    return Scaffold(appBar: AppBar(title: Text("Test"),), );
   }
 }

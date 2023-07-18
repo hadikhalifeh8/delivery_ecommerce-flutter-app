@@ -20,6 +20,15 @@ class AppRoute {
  
 
 
+ // Home Screen
+  static const String homeScreeen= "/homeScreen";
+
+
+
+             // View Orders Pending / Archieve /details page
+ 
+ static const String  archieveOrders = "/archieveOrders";
+ static const String  detailsOrder = "/detailsOrder";
 
 
 
